@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/noa"
+            android:layout_height="50dp"
+            android:layout_width="98dp"
+            android:ems="10"
+
+            android:hint="First No" />
+
+        <EditText
+            android:id="@+id/nob"
+            android:ems="10"
+
+            android:hint="Second No"
+            android:layout_height="50dp"
+            android:layout_width="98dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ans"
+            android:ems="10"
+            android:hint="Result"
+            android:layout_height="50dp"
+            android:layout_width="48dp"
+            android:layout_marginStart="21dp"
+
+            android:layout_marginBottom="26dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+
+            android:layout_marginBottom="26dp"
+            android:onClick="doSum"
+            android:text="+"
+            />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginStart="21dp"
+
+            android:layout_marginBottom="26dp"
+            android:onClick="doSub"
+            />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:onClick="doDiv"
+            android:layout_marginStart="21dp"
+
+            android:layout_marginBottom="26dp"
+            />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginStart="21dp"
+
+            android:layout_marginBottom="26dp"
+            android:onClick="doMul"
+            />
+    </LinearLayout>
+</LinearLayout>
